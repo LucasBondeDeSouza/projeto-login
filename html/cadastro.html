@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles/cadastro.css">
+</head>
+<body>
+    <main>
+        <section id="cadastro">
+            <div id="formulario">
+                <h1>Cadastre-se</h1>
+                <p>Seja bem-vindo(a). Crie sua conta para poder fazer as configurações no seu ambiente.</p>
+
+                <form action="cadastro.js" method="post" autocomplete="on">
+                    <label for="inome">Nome</label><br>
+                    <div class="campo">
+                        <input type="text" name="nome" id="inome" placeholder="seu nome"
+                        required maxlength="30">
+                    </div>
+
+                    <label for="isobrenome">Sobrenome</label><br>
+                    <div class="campo">
+                        <input type="text" name="sobrenome" id="isobrenome" placeholder="seu sobrenome"
+                        required maxlength="30">
+                    </div>
+
+                    <label for="ilogin">E-mail</label><br>
+                    <div class="campo">
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail"
+                        required maxlength="30">
+                    </div>
+
+                    <label for="isenha">Senha</label><br>
+                    <div class="campo">
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" 
+                        autocomplete="current-password" required minlength="8" maxlength="20">
+                    </div>
+
+                    <label for="iconfSenha">Confirme a Senha</label><br>
+                    <div class="campo">
+                        <input type="password" name="confSenha" id="iconfSenha" placeholder="sua senha" 
+                        autocomplete="current-password" required minlength="8" maxlength="20">
+                    </div>
+
+                    <a href="index.html"><input type="submit" value="Criar uma Conta"></a>
+            
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
